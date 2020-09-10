@@ -1,0 +1,102 @@
+<html lang="pt-br">
+    
+    
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="utf-8">
+    
+    <h3> Aluno: Felipe Alves </br>RA:21903296</h3> <p align="center">Para voltar à pagina principal <a href="JusticeLeague.html">clique aqui</a></p>
+    <hr/>
+    
+    <title>Seja um herói você também</title>
+    
+    <style>
+        p{
+            font-family:monospace;
+        }
+        a {
+            font-family: fantasy;
+            color:red;
+        }
+        body {
+		color: whitesmoke;
+            	background-color:darkcyan;
+		}
+    
+    </style>
+    
+    <p align="center"><font size="6">Bem vindo a estação de recrutamendo DC UNIVERSE.<br/> Para mais informações, entre em contato pelo email --->
+        <a href="mailto:recrutamentoDC@example.com?subject=Questions&body=Para mais informações, entre em contato ">Atendimento de recrutamento.</a></p>
+
+</head>
+
+<body>
+    <style>
+        
+        body {
+            background-image: url(imagens/DCUNIVERSE.jpg); 
+            background-blend-mode:soft-light
+        }
+            </style>
+    <hr/>
+    <p>Crie sua conta: </p>
+    <form method="post" action="mailto:recrutamentoDC@example.com">
+ Login: <input type="text" size="10" maxlength="40" name="Login" /><br/>
+ Senha: <input type="password" size="10" maxlength="10" name="Senha" /><br />
+      
+<form method="post" action="mailto:recrutamentoDC@example.com">
+ <p>Marque seus heróis favoritos: </p>
+
+ <label>Heróis:</label> <br />
+ <input type="checkbox" name="Fav hero" value="Batman" /> Batman <br />
+ <input type='checkbox' name="Fav hero" value="WonderWoman" /> Wonder Woman <br />
+ <input type='checkbox' name="Fav hero" value="Superman" /> Superman <br />
+ <input type='checkbox' name="Fav hero" value="Flash" /> Flash <br />
+ <input type='checkbox' name="Fav hero" value="Aquaman" /> Aquaman <br />
+ <input type='checkbox' name="Fav hero" value="Cyborg" /> Ciborgue <br />
+<br/>
+ <label>Deseja participar da liga da justiça?</label> <br />
+ <input type="radio" name="participar" value="nop" /> Não <br />
+ <input type="radio" name="participar" value="yes" /> Sim <br />
+
+<form method="post" action="mailto:recrutamentoDC@example.com">
+ <p>Como deseja ajudar?</p>
+
+ <select name="Help">
+ <option>Apenas demonstrar meu suporte</option>
+ <option>Auxilio financeiro</option>
+ <option>Lutar ao lado dos heróis</option>
+ <option>Não desejo realizar nada</option>
+ </select>
+    
+<br/><p>Deseja enviar uma mensagem para a Liga da Justiça?</p>
+<form method="post" action="mailto:recrutamentoDC@example.com">
+ <textarea rows="5" cols="20" wrap="physical" name="comments"></textarea><br />
+
+</form>
+
+
+<input type="submit" value="Enviar seu suporte!" />
+</form>
+
+ 
+        <hr/>
+ <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            alert("Você será redirecionado para um formulário de apoio à liga da justiça");
+            alterarPagina(120000);
+        });
+
+        function alterarPagina(timer) {
+            setTimeout(() => {
+                alert("Você será redirecionado para a página principal.");
+                window.location.replace('JusticeLeague.html');
+            }, timer);
+        }
+    </script>
+</body>
+</html>
+    
