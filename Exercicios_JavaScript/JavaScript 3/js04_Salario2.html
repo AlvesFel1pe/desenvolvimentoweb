@@ -1,7 +1,7 @@
 <html>
 <head>
-<title>js04_salario2.htm - do... while</title>
-<meta http-equiv="content-type" content="text/hmtl; charset=utf-8">
+<title>js04_salario2.html - do... while</title>
+<meta http-equiv="content-type" content="text/hmtl charset=utf-8">
 <meta charset="utf-8">
 </head>
     
@@ -26,26 +26,27 @@ js_tdes = (js_inss/100) * js_sb;
 js_s1 = js_sb - js_tdes;
 
 document.write('<p><b>DEMONSTRATIVO PARA CALCULO DO SALARIO LIQUIDO</b>');
-document.write('<p>Quantidade de moras trabalhadas (135 a 180) => <b>' + js_qht + '</b>');
+
+document.write('<p>Quantidade de horas trabalhadas (135 a 180) => <b>' + js_qht + '</b>');
 if (js_ght > 100){
-    document.write('...(<b>Valor maximo excedido!</b>)');
+    document.write('...(<b>Valor máximo excedido!</b>)');
 }
 if(js_ght < 135){
-    document.write('...(<b>valor minimo invalido</b>)');
+    document.write('...(<b>valor mínimo invalido</b>)');
 }
 document.write('<p>Valor da hora trabalhada (25 a 50) => <b>' + js_vht + '</b>');
 if (js_vht > 50){
-    document.write('...(<b>Valor maximo excedido</b>)');
+    document.write('...(<b>Valor máximo excedido</b>)');
 }
 if (js_vht < 25){
-    document.write('...(<b>Valor minimo excedido</b>)');
+    document.write('...(<b>Valor mínimo excedido</b>)');
 }
 document.write('<p>Percentual de desconto INSS(5 a 15) => <b>' + js_inss + '</b>');
 if (js_inss > 15){
-    document.write('...(<b>Valor maximo enxecedido</b>)');
+    document.write('...(<b>Valor máximo enxecedido</b>)');
 }
 if (js_inss <5 ){
-    document.write('... (<b>Valor minimo invalido</b>)');
+    document.write('... (<b>Valor mínimo invalido</b>)');
 }
 
 document.write('<p><b> Salario BRUTO = </b>'+ js_sb);
@@ -73,7 +74,7 @@ else{
 }
 
 document.write('<p>=================================================');
-js_resposta=window.confirm('deseja continuar');
+js_resposta=window.confirm('deseja continuar?');
 }
 while(js_resposta==true);
 </script>
